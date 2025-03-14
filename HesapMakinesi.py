@@ -36,5 +36,7 @@ def karekok_al(sayi):
 def mod_al(a, b):
     return a % b
 
-
+def us_al(x, y):
+    return pow(x,y)
+    
 
