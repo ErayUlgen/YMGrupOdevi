@@ -39,4 +39,11 @@ def mod_al(a, b):
 def us_al(x, y):
     return pow(x,y)
     
+def logaritma(*sayilar):
+    if not sayilar:
+        return "En az bir sayı girilmelidir"
+    try:
+        return [math.log10(sayi) for sayi in sayilar]
+    except ValueError:
+        return "Logaritma yalnızca pozitif sayılar için hesaplanabilir"
 
