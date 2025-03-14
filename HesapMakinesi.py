@@ -1,4 +1,3 @@
-print("Merhaba Dünya")
 def cikarma(*sayilar):
     if not sayilar:
         return 0
@@ -6,4 +5,7 @@ def cikarma(*sayilar):
     for sayi in sayilar[1:]:
         sonuc -= sayi
     return sonuc
+
+def topla(*sayilar):
+    return sum(sayilar)
 
