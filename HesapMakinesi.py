@@ -16,3 +16,15 @@ def cikarma(*sayilar):
 def topla(*sayilar):
     return sum(sayilar)
 
+def bolme(*sayilar):
+    sonuc = sayilar[0]
+    for i in sayilar[1:]:
+        try:
+            sonuc=sonuc/i
+        except ZeroDivisionError:
+            print("SIFIRA BOLME HATASI")
+            return
+    return sonuc
+            
+
+
