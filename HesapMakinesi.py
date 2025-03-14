@@ -1,6 +1,8 @@
 
+import math
+
 def carpma(*args):
-    sonuc = 1
+    sc = 1
     for sayi in args:
         sonuc *= sayi
     return sonuc
@@ -16,6 +18,7 @@ def cikarma(*sayilar):
 def topla(*sayilar):
     return sum(sayilar)
 
+
 def bolme(*sayilar):
     sonuc = sayilar[0]
     for i in sayilar[1:]:
@@ -26,5 +29,9 @@ def bolme(*sayilar):
             return
     return sonuc
             
+
+def karekok_al(sayi):
+    return math.sqrt(sayi)
+
 
 
