@@ -1,1 +1,4 @@
-print("Merhaba Dünya")
+def topla(*sayilar):
+    return sum(sayilar)
+
+
