@@ -33,5 +33,8 @@ def bolme(*sayilar):
 def karekok_al(sayi):
     return math.sqrt(sayi)
 
+def mod_al(a, b):
+    return a % b
+
 
 
