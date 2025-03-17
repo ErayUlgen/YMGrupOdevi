@@ -47,3 +47,16 @@ def logaritma(*sayilar):
     except ValueError:
         return "Logaritma yalnızca pozitif sayılar için hesaplanabilir"
 
+
+def trig_calculations(angle):
+    radians = math.radians(angle)
+    sin_val = math.sin(radians)
+    cos_val = math.cos(radians)
+    tan_val = math.tan(radians)
+    cot_val = None if tan_val == 0 else 1 / tan_val
+    return {
+        'sin': sin_val,
+        'cos': cos_val,
+        'tan': tan_val,
+        'cot': cot_val
+    }
